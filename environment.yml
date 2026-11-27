@@ -1,0 +1,12 @@
+# Conda environment for the HR backend.
+#   conda env create -f environment.yml
+#   conda activate hr-backend
+# After changing requirements: conda env update -f environment.yml --prune
+name: hr-backend
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements-dev.txt
